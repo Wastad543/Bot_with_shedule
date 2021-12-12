@@ -1,0 +1,66 @@
+CREATE DATABASE vuzt;
+\c vuzt
+
+
+
+
+
+
+CREATE TABLE cmonday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE ctuesday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE cwednesday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE cthursday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+
+INSERT INTO cmonday VALUES('11:20-12:50', 'Lecture', 'ULK-6', 'Introduction to IT', 'NULL');
+INSERT INTO cmonday VALUES('15:25-16:55', 'Lecture', 'ULK-2', 'Higher mathematics', 'NULL');
+INSERT INTO cmonday VALUES('17:15-18:45', 'Lecture', 'ULK-2', 'Electronics', 'Sretenskaya N. A.');
+
+INSERT INTO ctuesday VALUES('11:20-12:50', 'Laboratory work', 'A-418' ,'Introduction to IT', 'Chaika A. D.');
+INSERT INTO ctuesday VALUES('3:10-14:40', 'Lecture', 'ULK-6', 'Jurisprudence', 'Antipov A. A.');
+INSERT INTO ctuesday VALUES('15:25-16:55', 'Laboratory work', 'A-113', 'Information ecology', 'Erofeeva V. V.');
+INSERT INTO ctuesday VALUES('17:15-18:45', 'Practical lesson', 'A-300', 'Jurisprudence', 'Antipov A. A.');
+
+INSERT INTO cwednesday VALUES('9:30-11:00', 'Practical lesson', '344', 'Probability theory', 'Krysanov D. V.');
+INSERT INTO cwednesday VALUES('11:20-12:50', 'Practical lesson', 'Street', 'Physical Education', 'Koroleva S. A.');
+INSERT INTO cwednesday VALUES('13:10-14:40', 'Practical lesson', '224', 'Higher mathematics', 'Hetman I. V.');
+INSERT INTO cwednesday VALUES('15:25-16:55', 'Practical lesson', '224', 'Higher mathematics', 'Hetman I. V.');
+INSERT INTO cwednesday VALUES('17:15-18:45', 'Practical lesson', '322', 'Foreign language', 'Orlova G. L.');
+
+INSERT INTO cthursday VALUES('9:30-11:00', 'Practical lesson', '504A' ,'Introduction to IT', 'Chaika A. D.');
+INSERT INTO cthursday VALUES('11:20-12:50', 'Practical lesson', '525', 'Electronics', 'Sretenskaya N. A.');
+INSERT INTO cthursday VALUES('13:10-14:40', 'Laboratory work', '131', 'OKAEC', 'Mikirtians A. G.');
+INSERT INTO cthursday VALUES('15:25-16:55', 'Laboratory work', '507', 'Computing technology', 'Voronkova M. N.');
+INSERT INTO cthursday VALUES('17:15-18:45', 'Practical lesson', 'Street', 'Physical Education', 'Koroleva S. A.');
+
+
+
+
+
+
+CREATE TABLE nmonday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE ntuesday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE nwednesday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE nthursday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+CREATE TABLE nfriday(start_time VARCHAR NOT NULL, type VARCHAR NOT NULL, room VARCHAR NOT NULL, subject VARCHAR NOT NULL, full_name VARCHAR NOT NULL);
+
+INSERT INTO nmonday VALUES('15:25-16:55', 'Lecture', 'ULK-2', 'Higher mathematics', 'NULL');
+INSERT INTO nmonday VALUES('17:15-18:45', 'Lecture', 'ULK-2', 'Computing technology', 'NULL');
+
+INSERT INTO ntuesday VALUES('11:20-12:50', 'Laboratory work', 'A-418' ,'Introduction to IT', 'Chaika A. D.');
+
+INSERT INTO nwednesday VALUES('9:30-11:00', 'Practical lesson', '344', 'Probability theory', 'Krysanov D. V.');
+INSERT INTO nwednesday VALUES('11:20-12:50', 'Practical lesson', 'Street', 'Physical Education', 'Koroleva S. A.');
+INSERT INTO nwednesday VALUES('13:10-14:40', 'Practical lesson', '224', 'Higher mathematics', 'Hetman I. V.');
+INSERT INTO nwednesday VALUES('15:25-16:55', 'Practical lesson', '224', 'Higher mathematics', 'Hetman I. V.');
+INSERT INTO nwednesday VALUES('17:15-18:45', 'Practical lesson', '322', 'Foreign language', 'Orlova G. L.');
+
+INSERT INTO nthursday VALUES('9:30-11:00', 'Practical lesson', '504A' ,'Introduction to IT', 'Chaika A. D.');
+INSERT INTO nthursday VALUES('11:20-12:50', 'Practical lesson', '525', 'Electronics', 'Sretenskaya N. A.');
+INSERT INTO nthursday VALUES('13:10-14:40', 'Laboratory work', '131', 'OKAEC', 'Mikirtians A. G.');
+INSERT INTO nthursday VALUES('15:25-16:55', 'Laboratory work', '507', 'Computing technology', 'Voronkova M. N.');
+INSERT INTO nthursday VALUES('17:15-18:45', 'Practical lesson', 'Street', 'Physical Education', 'Koroleva S. A.');
+
+INSERT INTO nfriday VALUES('9:30-11:00', 'Lecture', 'ULK-2', 'Probability theory', 'Demin D. B.');
+INSERT INTO nfriday VALUES('11:20-12:50', 'Lecture', 'ULK-2', 'Communication history', 'Kalabekyants N. E.');
+INSERT INTO nfriday VALUES('13:10-14:40', 'Practical lesson', 'A-419', 'Communication history', 'Kalabekyants N. E.');
+INSERT INTO nfriday VALUES('15:25-16:55', 'Lecture', 'A-502', 'Information ecology', 'Erofeeva V. V.');
