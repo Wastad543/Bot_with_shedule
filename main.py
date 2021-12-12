@@ -8,7 +8,7 @@ from aiogram.utils import executor
 from BD import conn_to_bd
 from BD import know_week
 
-bot = Bot(token='2111238592:AAEyrQcTj0lKhx3YNlwga4uF2xVxx0GITw4', parse_mode="HTML")
+bot = Bot(token='', parse_mode="HTML")
 dp = Dispatcher(bot)
 
 choose_markup = ReplyKeyboardMarkup(resize_keyboard=True)
